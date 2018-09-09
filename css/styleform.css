@@ -1,17 +1,21 @@
 body{
 	font-family: arial;
 	font-size: 12pt;
+	margin-left: 525px;
 }
 #border{
 	border-style: solid;            
 	border-width: 1px;
 	background-color: #BDBDBD;
+	margin-right: 657px;
 }
 #bloco1{
 	border-style: solid;
     border-color: #000000;
 	font-family: arial;
 	font-size: 10pt;
+	margin-right: 650px;
+	margin-top: -13px;	
 }
 input{
 	background-color: #CEE3F6;
@@ -20,10 +24,50 @@ input{
 	border-style: solid;            
 	border-width: 1px;
 	background-color: #BDBDBD;
+	margin-right: 657px;
 }
 #bloco2{
 	border-style: solid;
     border-color: #000000;
 	font-family: arial;
 	font-size: 10pt;
+	margin-right: 650px;
+	margin-top: -13px;
 }
+#paragrafo{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#paragrafo1{
+	margin-left: 10px;
+	margin-top: 9px;
+}
+#paragrafo2{
+	margin-left: 3px;
+}
+#paragrafo3{
+	margin-left: 10px;
+}
+#paragrafo4{
+	margin-left: 10px;
+}
+#paragrafo5{
+	margin-left: 10px;
+}
+#paragrafo6{
+	margin-left: 10px;
+}
+#paragrafo7{
+	margin-left: 10px;
+}	
+#paragrafo8{
+	margin-left: 10px;
+}	
+#paragrafo9{
+	margin-left: 10px;
+	margin-bottom: 8px;
+}
+#paragrafo10{
+	margin-left: 10px;
+	margin-top: 5px;
+}														
