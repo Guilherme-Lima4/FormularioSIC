@@ -3,15 +3,18 @@
 	<head>	
 	<title>Formulário</title>
 	<link rel="stylesheet" type="text/css" href="css/styleform.css">
-	<script src="js/form.js"></script>
+	<script src="js/formulario.js"></script>
 	</head>		
-	<body>	
-	<b>Formulário de solicitação de informação (<i>Pessoa Física</i>)</b><br>
+	<body>
+	<form action="">
+	<div id="tudo">	
+	<b>Formulário de solicitação de informação (<i>Pessoa Física</i>)</b> <div id="SIC">SiC</div> <div id="sic"><b>Serviço de<br>Informações<br>ao Cidadão</b></div>
+	<div id="border0"></div>
 	<br>
 	<div id="border">As informações abaixo são obrigatórias</div><br>
-	<div id="bloco1">
-	<div id="paragrafo"><b>Nome:</b> <input type="text" name="nome" value="" size="90" pattern="[a-z\s]+$" required="yes"><br></div>
-	<div id="paragrafo1"><b>CPF:</b>&#160;&#160;&#160;&#160;<input type="text" name="cpf" value="" size="40" pattern="[0-9]+$" required="yes"><br></div>
+	<div id="borda">
+	<div id="paragrafo"><b>Nome:</b> <input type="text" required="yes" name="Nome" size="89" pattern="[a-z\s]+$"/><br></div>
+	<div id="paragrafo1"><b>CPF:</b>&#160;&#160;&#160;&#160;<input type="text" name="cpf" maxlength="11" required="yes" onblur="return verificarCPF(this.value)"/></div>
 	<br>
 	<div id="paragrafo2">Ou, se preferir, informar outro documento de identificação (RG, CNH, Passaporte, RNE ou outro documento válido. Se a opção for por RG, indicar órgão emissor e UF):<br></div>
 	<br>
@@ -20,54 +23,81 @@
 	<div id="paragrafo4"><b>Endereço eletrônico (e-mail):</b> <input type="email" value="" size="65" required="required" class="input-text" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" /><br></div>
 	<div id="paragrafo5"><b>ou</b><br></div>
 	<div id="paragrafo6"><b>Endereço fisico (Rua, nº, complemento, Bairro):</b></div>
-	<div id="paragrafo7"><input type="text" name="endereço" value="" size="91" pattern="[0-9]+$ [a-z\s]+$" required="yes"><br></div>
+	<div id="paragrafo7"><input type="text" name="endereço" value="" size="91" pattern="[a-z\s]+$" required="yes"><br></div>
 	<br>	
-	<div id="paragrafo8"><b>Cidade:</b> <input type="text" name="cidade" value="" size="40" pattern="[a-z\s]+$" required="yes">&ensp;&ensp;&ensp;<b>Estado:</b> <input type="button" size="15" id="btnCarregar" onclick="estado()" value="Estados" /><select name="uf" id="uf">
+	<div id="paragrafo8"><b>Cidade:</b> <input type="text" name="cidade" value="" size="40" pattern="[a-z\s]+$" required="yes">&ensp;&ensp;&ensp;<b></b> <input type="button" required="yes" size="15" id="btnCarregar" onclick="estado()" value="Estados" /><select name="uf" id="uf" required="yes">
 	<option value="">Selecione</option>
-	<option value="AC">AC</option>
+	<option value="Acre">Acre</option>
+	<option value="Alagoas">Alagoas</option>
+	<option value="Amazonas">Amazonas</option>
+	<option value="Amapá">Amapá</option>
+	<option value="Bahia">Bahia</option>
+	<option value="Ceará">Ceará</option>
+	<option value="Distrito Federal">Distrito Federal</option>
+	<option value="Espírito Santo">Espírito Santo</option>
+	<option value="Goiás">Goiás</option>
+	<option value="Maranhão">Maranhão</option>
+	<option value="Minas Gerais">Minas Gerais</option>
+	<option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+	<option value="Mato Grosso">Mato Grosso</option>
+	<option value="Pará">Pará</option>
+	<option value="Paraíba">Paraíba</option>
+	<option value="Pernambuco">Pernambuco</option>
+	<option value="Piauí">Piauí</option>
+	<option value="Paraná">Paraná</option>
+	<option value="Rio de Janeiro">Rio de Janeiro</option>
+	<option value="Rio Grande do Norte">Rio Grande do Norte</option>
+	<option value="Rio Grande do Sul">Rio Grande do Sul</option>
+	<option value="Rondônia">Rondônia</option>
+	<option value="Roraima">Roraima</option>
+	<option value="Santa Catarina">Santa Catarina</option>
+	<option value="Sergipe">Sergipe</option>
+	<option value="São Paulo">São Paulo</option>
+	<option value="Tocantins">Tocantins</option>
+ </select>
+	 &ensp;<b>UF:</b> <input type="button" required="yes" size="" id="btnCarregar" onclick="" value="" /><select name="uf" id="uf" required="yes"><option value="">UF</option><option value="AC">AC</option>
 	<option value="AL">AL</option>
-	<option value="AM">AM</option>
 	<option value="AP">AP</option>
+	<option value="AM">AM</option>
 	<option value="BA">BA</option>
 	<option value="CE">CE</option>
 	<option value="DF">DF</option>
 	<option value="ES">ES</option>
 	<option value="GO">GO</option>
 	<option value="MA">MA</option>
-	<option value="MG">MG</option>
-	<option value="MS">MS</option>
 	<option value="MT">MT</option>
+	<option value="MS">MS</option>
+	<option value="MG">MG</option>
 	<option value="PA">PA</option>
 	<option value="PB">PB</option>
+	<option value="PR">PR</option>
 	<option value="PE">PE</option>
 	<option value="PI">PI</option>
-	<option value="PR">PR</option>
 	<option value="RJ">RJ</option>
 	<option value="RN">RN</option>
 	<option value="RS">RS</option>
 	<option value="RO">RO</option>
 	<option value="RR">RR</option>
 	<option value="SC">SC</option>
-	<option value="SE">SE</option>
 	<option value="SP">SP</option>
+	<option value="SE">SE</option>
 	<option value="TO">TO</option>
- </select>
-	 &ensp;&ensp;&ensp;<b>UF:</b> <input type="text" name="UF" value="" size="7"><br></div>
+    </select><br></div>
 	<br>
-	<div id="paragrafo9"><b>CEP:</b>&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="CEP" value="" size="15" pattern="[0-9]+$" required="yes">&ensp;&ensp;&ensp;&ensp;<b>País:</b> <input type="text" name="país" value="" size="61" pattern="[a-z\s]+$" required="yes"></div>
+	<div id="paragrafo9"><b>CEP:</b>&#160;&#160;&#160;&#160;&#160;&#160;<input type="text" name="CEP" value="" size="15" pattern="[0-9]+$" required="yes">&ensp;&ensp;&ensp;&ensp;<b>País:</b> <input type="text" name="país" value="" size="59" pattern="[a-z\s]+$" required="yes"></div>
 	</div>
 	<br>
 	<div id="border1">Os campos a seguir são opcionais e se preenchidos contribuirão para a melhoria de nossos serviços</div><br>
-	<div id="bloco2">
+	<div id="borda1">
 	<div id="paragrafo10"><b>Sexo:</b>&ensp;&ensp;<input type="radio" name="sexo" value="masculino">&#160;&#160;Maculino &ensp;&ensp;&ensp;<input type="radio" name="sexo" value="feminino">&#160;&#160;Feminino &emsp;&emsp;&emsp;<b>Data de nascimento:</b>&#160;&#160;<input type="date" name="data_aniversario"></div>
 	<br>
 	<div id="paragrafo11"><b>Escolaridade</b><br></div>
 	<br>
 	<div id="paragrafo12"><input type="radio" name="esc" value="Sem instrução formal">&#160;Sem instrução formal&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" name="esc" value="Ensino Superior">&#160;Ensino Superior&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input type="radio" name="esc" value="Doutorado">&#160;Doutorado</div><br>
 	<br>
-	<div id="paragrafo13"><input type="radio" name="esc" value="Ensino Fundamental">&#160;Ensino Fundamental&emsp;&emsp;&emsp;&emsp;&emsp;&#160;<input type="radio" name="esc" value="Especialização">&#160;Especialização<br>
+	<div id="paragrafo13"><input type="radio" name="esc" value="Ensino Fundamental">&#160;Ensino Fundamental&emsp;&emsp;&emsp;&emsp;&emsp;&#160;<input type="radio" name="esc" value="Especialização">&#160;Especialização<br></div>
 	<br>
-	<div id="paragrafo14"><input type="radio" name="esc" value="EnsinoMédio">&#160;Ensino Médio&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="esc" value="Mestrado">&#160;Mestrado<br>
+	<div id="paragrafo14"><input type="radio" name="esc" value="EnsinoMédio">&#160;Ensino Médio&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;<input type="radio" name="esc" value="Mestrado">&#160;Mestrado<br></div>
 	<br>
 	<div id="paragrafo15"><b>Ocupação principal / Profissão</b></div>
 	<br>
@@ -83,10 +113,21 @@
 	<br>
 	<div id="paragrafo21"><input type="radio" name="opp" value="Outras">&#160;Outras</div>
 	<br>
-	<div id="paragrafo22"><b>Telefone</b>&emsp;(<input type="text" name="tel" value="" size="1" pattern="[0-9]+$" required="yes">)<input type="text" name="telfone" value="" size="15" pattern="[0-9]+$" required="yes"></div><br>
-	</div>
+	<div id="paragrafo22"><b>Telefone</b>&emsp;(<input type="text" name="tel" value="" size="1" pattern="[0-9]+$" required="yes">)<input type="text" name="telfone" value="" size="15" pattern="[0-9]+$" required="yes"></div>
+	</div>	
+	<br>
 	<div id="border2">Especificação do pedido de acesso à informação</div>
-	
+	<div id="borda2">
+	<div id="paragrafo23"><b>Órgão/Entidade destinatário do pedido:</b></div>
+	<div id="paragrafo24"><input type="text" name="nome" value="" size="95" pattern="[a-z\s]+$" required="yes"></div>
+	<div id="paragrafo25"><b>Forma preferencial de recebimento da resposta</b></div>
+	<div id="paragrafo26"><input type="radio" name="pref" value="consultarpessoalmente">&#160;&#160;Buscar/Consultar pessoalmente&ensp;&ensp;&ensp;<input type="radio" name="pref" value="email">&#160;&#160; E-mail&emsp;&emsp;&#160;&#160;&#160;&ensp;<input type="radio" name="pref" value="porcarta">&#160;&#160; Por carta (com custo)</div>
+	<div id="paragrafo27"><b>Especificação do pedido:</b></div>
+	<div id="paragrafo28"><textarea name="menssagem" rows="10" cols="97"></textarea></div>
+	</div>
+	<div id="paragrafo29"><input type="submit" value="Enviar"></div>	
+	</div>
+	</form>
 	</body>	
 </html>
 			

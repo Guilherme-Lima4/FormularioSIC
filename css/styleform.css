@@ -1,34 +1,56 @@
 body{
 	font-family: arial;
 	font-size: 12pt;
-	margin-left: 525px;
+	margin-left: 450px;
+	margin-top: 25px;
 }
+#SIC{
+	font-size: 50px;
+	color: #FE2E2E;
+	margin-left: 500px;
+	margin-top: -50px;
+}
+#sic{
+	font-size: 14px;
+	margin-left: 588px;
+	margin-top: -53px;
+}
+#border0{
+	border-width: 4px;
+	border-color: #D8D8D8;
+	margin-right: 410px;
+	border-style: solid;
+}		
 #border{
 	border-style: solid;            
 	border-width: 1px;
-	background-color: #BDBDBD;
-	margin-right: 657px;
+	background-color: #D8D8D8;
+	margin-right: 420px;
+	font-size: 14px;
+	border: none;
 }
-#bloco1{
+#borda{
 	border-style: solid;
     border-color: #000000;
 	font-family: arial;
 	font-size: 10pt;
-	margin-right: 650px;
+	margin-right: 410px;
 	margin-top: -13px;	
 }
 #border1{
 	border-style: solid;            
 	border-width: 1px;
-	background-color: #BDBDBD;
-	margin-right: 657px;
+	background-color: #D8D8D8;
+	margin-right: 420px;
+	font-size: 14px;
+	border: none;
 }
-#bloco2{
+#borda1{
 	border-style: solid;
     border-color: #000000;
 	font-family: arial;
 	font-size: 10pt;
-	margin-right: 650px;
+	margin-right: 410px;
 	margin-top: -13px;
 }
 #paragrafo{
@@ -81,42 +103,89 @@ body{
 	margin-top: -25px;
 }
 #paragrafo14{
-	margin-left: 1px;
+	margin-left: 10px;
 	margin-top: -11px;
 }
 #paragrafo15{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: 1px;
 }
 #paragrafo16{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }
 #paragrafo17{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }
 #paragrafo18{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }
 #paragrafo19{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }	
 #paragrafo20{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }		
 #paragrafo21{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-top: -8px;
 }
 #paragrafo22{
-	margin-left: -2px;
+	margin-left: 10px;
 	margin-bottom: 8px;
 }
+#paragrafo23{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#paragrafo24{
+	margin-left: 12px;
+}
+#paragrafo25{
+	margin-left: 10px;
+	margin-top: 5px;
+}
+#paragrafo26{
+	margin-left: 7px;
+	margin-top: 8px;
+}
+#paragrafo27{
+	margin-left: 10px;
+	margin-top: 20px;
+}
+#paragrafo28{
+	margin-left: 4px;
+	margin-top: 8px;
+}
+#paragrafo29{
+	margin-left: 4px;
+	margin-top: 8px;            
+}
+textarea{
+	background-color: #CEE3F6;
+}	
 input{
 	background-color: #CEE3F6;
+	border: none;
+}
+#border2{
+	border-style: solid;            
+	border-width: 1px;
+	background-color: #D8D8D8;
+	margin-right: 420px;
+	font-size: 14px;
+	border: none;
+}
+#borda2{
+	border-style: solid;
+    border-color: #000000;
+	font-family: arial;
+	font-size: 10pt;
+	margin-right: 410px;
+	margin-top: 5px;	
 }
 
